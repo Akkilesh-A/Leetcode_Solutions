@@ -4,9 +4,7 @@ class Solution {
         int val=nums[0];
         for(int i=0;i<nums.length;i++){
             if(nums[i]>val){
-                int temp=nums[ind];
                 nums[ind]=nums[i];
-                nums[i]=temp;
                 val=nums[ind];
                 ind=ind+1;
             }
